@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* CUSTOM SCROLLBAR FOR WEBKIT (CHROME/EDGE/SAFARI) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #155e75;
+  /* Cyan-900 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+  /* Cyan-500 */
+}
+
+/* FIREFOX SCROLLBAR */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #155e75 #050505;
+}
+
+/* UTILITY FOR HIDING SCROLLBAR BUT KEEPING SCROLL */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
